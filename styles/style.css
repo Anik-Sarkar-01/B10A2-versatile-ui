@@ -41,12 +41,21 @@
     color: rgb(230, 83, 60);
 }
 
+.btn-primary {
+    border-radius: 42px;
+    background: rgb(230, 83, 60);
+    padding: 16px 40px;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
 
 /* header styles */
 header {
     width: 100%;
-    height: 715px;
-    background: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%);
+    max-height: 680px;
+    background: linear-gradient( 150deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%);
 }
 
 /* navbar styles */
@@ -84,7 +93,74 @@ header {
 .nav-link {
     text-decoration: none;
     font-size: 1.1rem;
-    
+
 }
 
 /* banner styles */
+.banner-container {
+    max-width: 85%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-content h1 {
+    width: 520px;
+    font-size: 4.85rem;
+    font-weight: 900;
+    margin-bottom: 28px;
+}
+
+.banner-content p {
+    font-size: 1rem;
+    width: 520px;
+    margin-bottom: 28px;
+
+}
+
+#btn-download {
+    margin-left: 14px;
+    border: 1px solid rgb(255, 255, 255);
+    background: transparent;
+}
+
+.banner-image{
+    position: relative;
+    
+}
+
+.banner-image img{
+    width: 100%;
+    outline: none;
+}
+
+#card-1 {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background-color: rgba(48, 48, 48, 0.54);
+    width: 206px;
+    height: 96px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 421px;
+    right: 261px;
+}
+#card-2 {
+    width: 193px;
+    height: 98px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.1);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 421px;
+    right: 261px;
+    top: 122px;
+    left: 225px;
+}
