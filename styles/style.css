@@ -42,13 +42,13 @@
 }
 
 .btn-primary {
-    width: 200px;
     border-radius: 42px;
     background: rgb(230, 83, 60);
-    padding: 16px 40px;
+    padding: 16px 36px;
     border: none;
-    font-size: 1rem;
+    font-size: .8rem;
     font-weight: 600;
+
 
 
 }
@@ -86,6 +86,7 @@ header {
     align-items: center;
     max-width: 85%;
     margin: 0 auto;
+    padding-top: 40px;
 
 }
 
@@ -126,11 +127,12 @@ header {
     margin: 0px auto;
     justify-content: space-between;
     align-items: center;
+    margin-top: 50px;
 }
 
 
 .banner-content h1 {
-    width: 520px;
+    max-width: 520px;
     font-size: 4.85rem;
     font-weight: 900;
     margin-bottom: 28px;
@@ -211,7 +213,7 @@ header {
 
 /* main styles */
 main {
-    margin-top: 100px;
+    padding-top: 100px;
     max-width: 100%;
     background: rgba(0, 0, 0, 0.9)
 }
@@ -450,17 +452,17 @@ main {
         width: 285px;
         font-size: 2.5rem;
         font-weight: 900;
+        
     }
 
     .banner-content p {
         font-size: 1rem;
         width: 274px;
+        
 
     }
 
-    .btn-primary {
-        padding: 16px 25px;
-    }
+
 
     #card-1 {
         width: 155px;
