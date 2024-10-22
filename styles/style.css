@@ -331,6 +331,7 @@ td {
     font-size: 0.8rem;
 }
 
+
 #calc-input-container {
     display: grid;
     gap: 10px;
@@ -592,19 +593,18 @@ select option{
 
     .bmi-calc{
         flex-direction: column;
+        gap: 50px;
     }
 
     .row-1{
-        grid-template-columns: 40% 40%;
+        grid-template-columns: 185px 185px ;
     }
 
     .row-2{
-        grid-template-columns: 40% 40%;
+        grid-template-columns: 50% 50%;
     }
 
-    .row-3{
-        grid-template-columns: 80%;
-    }
+    
 }
 
 /* responsive design - medium devices */
@@ -659,5 +659,17 @@ select option{
 
         justify-content: flex-start;
         gap: 150px;
+    }
+    .bmi-calc{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .row-1{
+        grid-template-columns: 50%  50% ;
+    }
+
+    .row-2{
+        grid-template-columns: 50% 50%;
     }
 }
