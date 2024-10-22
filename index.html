@@ -30,7 +30,8 @@
         <!-- banner starts -->
         <div class="banner-container display-flex">
             <div class="banner-content">
-                <h1 class="text-white">Get body in <br> <span class="great-vibes-font">shape</span> & stay <br> healthy</h1>
+                <h1 class="text-white">Get body in <br> <span class="great-vibes-font">shape</span> & stay <br> healthy
+                </h1>
                 <p class="text-gray">A huge selection of health and fitness content, healthy recipes and transformation
                     stories <br> to help
                     you get fit and stay fit!</p>
@@ -110,6 +111,72 @@
             </div>
         </section>
         <!-- run extra mile section end -->
+
+        <!-- BMI Calculator Start -->
+        <section class="bmi-calc-container">
+            <div class="bmi-calc display-flex">
+
+                <div class="bmi-calc-chart">
+                    <h2 class="chart-title text-white">BMI Calculator Chart</h2>
+                    <table id="chart-table">
+                        <thead>
+                            <tr>
+                                <th>BMI</th>
+                                <th>Weight Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Below 18.5</td>
+                                <td>Underweight</td>
+                            </tr>
+                            <tr>
+                                <td>18.5 - 24.9</td>
+                                <td>Healthy</td>
+                            </tr>
+                            <tr>
+                                <td>25.0 - 29.9</td>
+                                <td>Overweight</td>
+                            </tr>
+                            <tr>
+                                <td>30.0 - and Above</td>
+                                <td>Obese</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="calculate-bmi">
+                    <h2 class="calc-title text-white">Calculate your BMI</h2>
+                    <p class="calc-description text-gray">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. </p>
+                    <div id="calc-input-container">
+                        <div class="row-1">
+                            <input type="text" name="" id="hight" placeholder="Height/cm">
+                            <input type="text" name="" id="weight" placeholder="Weight/kg">
+                        </div>
+                        <div class="row-2">
+                            <input type="text" name="" id="age" placeholder="Age" class="text-white">
+                            <select name="" id="sex" class="text-gray">
+                                <option value="" class="text-gray">Sex</option>
+
+                                <!-- Available Options -->
+                                <option value="1" class="text-gray">Male</option>
+                                <option value="2" class="text-gray">Female</option>
+                            </select>
+                        </div>
+                        <div class="row-3">
+                            <select name="" id="activity-factor" class="text-gray">
+                                <option value="">Select an activity factor</option>
+                            </select>
+                        </div>
+                        
+                    </div>
+                    <button class="btn-primary text-white calc-btn">Calculate</button>
+                </div>
+            </div>
+
+        </section>
+        <!-- BMI Calculator ends -->
 
         <!-- meet our team section start -->
         <section class="meet-our-team-container">
