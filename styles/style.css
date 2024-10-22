@@ -168,10 +168,17 @@ header {
     height: 96px;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    gap: 5px;
     position: absolute;
     top: 421px;
     right: 261px;
+}
+
+.circle{
+    background-color: rgb(230, 83, 60);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
 }
 
 #card-2 {
@@ -381,6 +388,7 @@ select option{
 
 /* meet our team styles */
 .meet-our-team-container {
+    padding-top: 60px;
     width: 85%;
     margin: 0 auto;
     padding-bottom: 88px;
