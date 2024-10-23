@@ -1,6 +1,7 @@
 /* google font */
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+/* universal styles */
 * {
     margin: 0;
     padding: 0;
@@ -22,6 +23,7 @@
     font-weight: 400;
     font-style: normal;
 }
+
 
 /* shared styles */
 
@@ -46,7 +48,7 @@
     background: rgb(230, 83, 60);
     padding: 16px 36px;
     border: none;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: 600;
 }
 
@@ -62,6 +64,11 @@
 .description {
     font-size: 0.8rem;
     margin-top: 14px;
+}
+
+.container{
+    width: 85%;
+    margin: 0 auto;
 }
 
 
@@ -81,8 +88,6 @@ header {
 .navbar {
     justify-content: space-between;
     align-items: center;
-    max-width: 85%;
-    margin: 0 auto;
     padding-top: 40px;
 
 }
@@ -130,7 +135,6 @@ header {
 
 
 .banner-content h1 {
-
     font-size: 4.85rem;
     font-weight: 900;
     margin-bottom: 28px;
@@ -138,7 +142,6 @@ header {
 
 .banner-content p {
     font-size: 1rem;
-
     margin-bottom: 28px;
 
 }
@@ -148,7 +151,6 @@ header {
     margin-left: 14px;
     border: 1px solid rgb(255, 255, 255);
     background: transparent;
-    display: inline;
 }
 
 .banner-image {
@@ -159,7 +161,7 @@ header {
     width: 100%;
 }
 
-#card-1 {
+#card-1, #card-2 {
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     backdrop-filter: blur(20px);
@@ -174,7 +176,7 @@ header {
     right: 261px;
 }
 
-.circle {
+#card-1 .circle {
     background-color: rgb(230, 83, 60);
     border-radius: 50%;
     width: 30px;
@@ -182,18 +184,11 @@ header {
 }
 
 #card-2 {
+    background-color: rgba(255, 255, 255, 0.1);
     width: 193px;
     height: 98px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    backdrop-filter: blur(20px);
-    background-color: rgba(255, 255, 255, 0.1);
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
     position: absolute;
-    top: 421px;
-    right: 261px;
     top: 122px;
     left: 225px;
 }
@@ -203,7 +198,7 @@ header {
     font-weight: 900;
 }
 
-#card-1 p {
+#card-1 p, #card-2 p  {
     font-size: 0.8rem;
 }
 
@@ -212,9 +207,6 @@ header {
     font-weight: 900;
 }
 
-#card-2 p {
-    font-size: 0.8rem;
-}
 
 /* main styles */
 main {
@@ -224,12 +216,6 @@ main {
 }
 
 /* change-your-habit styles */
-.change-your-habit-container {
-    width: 85%;
-    margin: 0 auto;
-
-}
-
 .habit-cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -268,7 +254,6 @@ main {
     background: rgb(34, 34, 34);
     padding: 30px 40px 30px 40px;
     margin-bottom: 100px;
-
 }
 
 .run-extra-mile-container p {
@@ -290,7 +275,6 @@ main {
     border-radius: 18px;
     width: 100%;
     height: 100%;
-
 }
 
 /* BMI calculator section */
@@ -405,7 +389,6 @@ select option {
 
 #membership-btn {
     cursor: pointer;
-
 }
 
 .membership-cards,
@@ -439,10 +422,6 @@ select option {
     background: linear-gradient(to bottom, rgba(230, 83, 60, 0.3), rgb(34, 34, 34));
 }
 
-
-
-
-
 .membership-card h3,
 .membership-card span {
     font-size: 2rem;
@@ -461,6 +440,8 @@ select option {
     margin-top: 150px;
     animation: glow 1.5s infinite alternate;
 }
+
+/* animation on review cards */
 
 @keyframes glow {
     0% {
@@ -491,7 +472,6 @@ select option {
     max-width: 85%;
     margin: 0 auto;
     padding-bottom: 88px;
-
 }
 
 .team-cards {
@@ -557,7 +537,6 @@ select option {
 /* footer styles */
 .footer-container {
     padding-top: 80px;
-
     background-color: black;
 
 }
