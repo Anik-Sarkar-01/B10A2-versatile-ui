@@ -144,7 +144,7 @@ header {
 }
 
 
-#btn-download {
+.btn-download {
     margin-left: 14px;
     border: 1px solid rgb(255, 255, 255);
     background: transparent;
@@ -174,7 +174,7 @@ header {
     right: 261px;
 }
 
-.circle{
+.circle {
     background-color: rgb(230, 83, 60);
     border-radius: 50%;
     width: 30px;
@@ -345,17 +345,17 @@ td {
     margin-bottom: 30px;
 }
 
-.row-1{
+.row-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-.row-2{
+.row-2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-.row-3{
+.row-3 {
     display: grid;
     grid-template-columns: 1fr;
 }
@@ -370,11 +370,11 @@ td {
     margin: 5px;
 }
 
-::placeholder{
+::placeholder {
     color: rgba(255, 255, 255, 0.5);
 }
 
-select option{
+select option {
     background-color: rgb(97, 97, 97);
 }
 
@@ -383,13 +383,90 @@ select option{
 }
 
 
+/* crushing your health styles */
+.crushing-your-health-container {
+    width: 85%;
+    margin: 0 auto;
+
+}
+
+.crushing-your-health-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.crushing-your-health-title h1 {
+    margin-top: 20px;
+}
+
+#membership-btn {
+    /* margin-left: 0px; */
+    cursor: pointer;
+
+}
+
+.membership-cards,
+.review-cards {
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.membership-card,
+.review-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background: rgb(34, 34, 34);
+    padding: 50px;
+    border-radius: 30px;
+    margin-top: 100px;
+}
+
+
+
+.membership-card h3,
+.membership-card span {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.membership-card ul li {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.review-card {
+    border: 1px solid rgb(255, 255, 255);
+    background: transparent;
+    position: relative;
+    margin-top: 150px;
+}
+
+.review-card img {
+    position: absolute;
+    width: 100px;
+    top: -60px;
+}
+
+.quotation {
+    font-size: 1.5rem;
+}
+
 
 
 
 /* meet our team styles */
 .meet-our-team-container {
     padding-top: 60px;
-    width: 85%;
+    max-width: 85%;
     margin: 0 auto;
     padding-bottom: 88px;
 
@@ -599,20 +676,29 @@ select option{
         gap: 20px;
     }
 
-    .bmi-calc{
+    .bmi-calc {
         flex-direction: column;
         gap: 50px;
     }
 
-    .row-1{
-        grid-template-columns: 185px 185px ;
+    .row-1 {
+        grid-template-columns: 185px 185px;
     }
 
-    .row-2{
+    .row-2 {
         grid-template-columns: 50% 50%;
     }
 
-    
+    .crushing-your-health-title h1 {
+        font-size: 2rem;
+    }
+
+    .membership-cards,
+    .review-cards {
+        flex-direction: column;
+
+    }
+
 }
 
 /* responsive design - medium devices */
@@ -668,16 +754,23 @@ select option{
         justify-content: flex-start;
         gap: 150px;
     }
-    .bmi-calc{
+
+    .bmi-calc {
         flex-direction: column;
         gap: 50px;
     }
 
-    .row-1{
-        grid-template-columns: 50%  50% ;
+    .row-1 {
+        grid-template-columns: 50% 50%;
     }
 
-    .row-2{
+    .row-2 {
         grid-template-columns: 50% 50%;
+    }
+
+    .membership-cards,
+    .review-cards {
+        flex-direction: column;
+        
     }
 }
