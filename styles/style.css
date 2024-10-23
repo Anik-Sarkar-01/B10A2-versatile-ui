@@ -403,7 +403,6 @@ select option {
 }
 
 #membership-btn {
-    /* margin-left: 0px; */
     cursor: pointer;
 
 }
@@ -424,11 +423,22 @@ select option {
     align-items: center;
     justify-content: center;
     gap: 30px;
-    background: rgb(34, 34, 34);
+    background-color: rgb(34, 34, 34);
     padding: 50px;
     border-radius: 30px;
     margin-top: 100px;
 }
+
+
+.membership-card:nth-child(2n+1) {
+    transform: scale(0.85);
+}
+
+.membership-card:hover {
+    background: linear-gradient(to bottom, rgba(230, 83, 60, 0.3), rgb(34, 34, 34));
+}
+
+
 
 
 
@@ -448,6 +458,17 @@ select option {
     background: transparent;
     position: relative;
     margin-top: 150px;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px 0.5px rgba(230, 83, 60, 0.7);
+    }
+
+    100% {
+        box-shadow: 0 0 15px 0.5px rgba(230, 83, 60, 0.9);
+    }
 }
 
 .review-card img {
@@ -699,6 +720,10 @@ select option {
 
     }
 
+    .membership-card:nth-child(2n+1) {
+        transform: scale(1);
+    }
+
 }
 
 /* responsive design - medium devices */
@@ -771,6 +796,10 @@ select option {
     .membership-cards,
     .review-cards {
         flex-direction: column;
-        
+
+    }
+
+    .membership-card:nth-child(2n+1) {
+        transform: scale(1);
     }
 }
