@@ -277,11 +277,17 @@ main {
     height: 100%;
 }
 
+/* bmi calculator intro section  */
+.bmi-calc-intro{
+    padding-bottom: 100px;
+    padding-left: 100px;
+}
+
+
 /* BMI calculator section */
 .bmi-calc-container {
     background-color: rgb(34, 34, 34);
     padding: 55px 0px;
-
 }
 
 .bmi-calc {
@@ -675,6 +681,10 @@ select option {
         gap: 20px;
     }
 
+    .bmi-calc-intro{
+        padding: 0px 0px 50px 0px;
+    }
+
     .bmi-calc {
         flex-direction: column;
         gap: 50px;
@@ -695,6 +705,7 @@ select option {
     .membership-cards,
     .review-cards {
         flex-direction: column;
+        gap: 0;
 
     }
 
@@ -754,6 +765,10 @@ select option {
         gap: 150px;
     }
 
+    .bmi-calc-intro{
+        padding: 0px 0px 50px 0px;
+    }
+
     .bmi-calc {
         flex-direction: column;
         gap: 50px;
@@ -770,6 +785,7 @@ select option {
     .membership-cards,
     .review-cards {
         flex-direction: column;
+        gap: 0;
 
     }
 
